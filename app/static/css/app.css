@@ -1,3 +1,202 @@
-body {
+body 
+{
     padding-top: 5rem;
+    background: lightgray;
+}
+
+form
+{
+
+    background-color: white;
+    padding: 5px;
+}
+
+div.sidebysidegroup 
+{
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   margin-right: 600px; 
+   gap: 10px; 
+}
+
+div.form-group 
+{
+    padding-bottom: 10px;
+}
+
+.inpuLabel 
+{
+    display: block;
+}
+
+button 
+{
+    background: royalblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+input,select
+{
+    width: 250px; 
+    border-radius: 8px; 
+    padding: 8px; 
+}
+
+textarea
+{
+    border-radius: 8px;
+    width: 600px;
+    padding: 8px;
+
+}
+
+input[name="title"] 
+{
+    width: 600px; 
+}
+
+Label
+{
+    font-weight: bold;
+}
+
+.flashes 
+{
+    color: white;
+    background-color: limegreen;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+img
+{
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    max-height: 400px;
+    max-width: 500px;
+
+}
+
+div.property_properties
+{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    border: 1px 
+}
+
+div.prs
+{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 445px;
+    box-sizing: border-box;
+    border: 1px darkgray;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.prs img
+{
+    height: 430px;
+}
+
+div.topinfo 
+{
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   margin-right: 200px;
+}
+
+div.bottominfo 
+{
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   margin-right: 155px;
+
+}
+
+button:hover 
+{
+    background: #0056b3; /* Darken background on hover */
+}
+
+.buttons-container 
+{
+    display: flex;
+    justify-content: center;
+    background: royalblue;
+    border-style: none;
+}
+
+.btn
+{
+    width: 300px;
+    color: white;
+    font-weight: bold;
+}
+
+.price 
+{
+    background-color:blue;
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 20px; 
+    width: 100px;
+}
+
+.type
+{
+    background-color:orange;
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+.property_container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 350px;
+}
+
+.property_container  img
+{
+    height: 400px;
+}
+
+.get_property
+{
+    display:flex;
+    flex-direction: column;
+    width: 450px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px darkgray;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
 }

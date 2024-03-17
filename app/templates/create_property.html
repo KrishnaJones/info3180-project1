@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>Add New Property</h1>
+    {% include 'flash_messages.html' %}
+    <br>
+    <form action="{{ url_for('create_property') }}" enctype="multipart/form-data" method="post" >
+        {{ form.csrf_token }}
+
+        <div class="form-group">
+          <label for="title" class="inpuLabel">{{ form.title.label }}</label>
+          {{ form.title }}
+        </div>
+
+        <div class="form-group">
+          <label for="description" class="inpuLabel">{{ form.description.label }}</label>
+          {{ form.description }}
+        </div>
+
+        <div class="sidebysidegroup">
+            <div class="form-group">
+              <label for="num_of_bedrooms" class="inpuLabel">{{ form.num_of_bedrooms.label }}</label>
+              {{ form.num_of_bedrooms }}
+            </div>
+            <div class="form-group">
+              <label for="num_of_bathrooms" class="inpuLabel">{{ form.num_of_bathrooms.label }}</label>
+              {{ form.num_of_bathrooms }}
+            </div>
+            <div class="form-group">
+              <label for="price" class="inpuLabel">{{ form.price.label }}</label>
+              {{ form.price }}
+            </div>
+            <div class="form-group">
+              <label for="type" class="inpuLabel">{{ form.type.label }}</label>
+              {{ form.type }}
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group">
+          <label for="location" class="inpuLabel">{{ form.location.label }}</label>
+          {{ form.location }}
+        </div>
+
+        <br>
+        <div class="form-group">
+          <label for="photo" class="inpuLabel">{{ form.photo.label }}</label>
+          {{ form.photo }}
+        </div>
+        <button type="submit">Add Property</button>
+        <br>
+    </form>
+{% endblock %}
